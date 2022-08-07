@@ -1,3 +1,5 @@
+import { Box } from './Box';
+import { GlobalStyle } from './GlobalStyle';
 import { Profile } from './Profile/Profile';
 import user from '../user.json';
 // import { Box } from './Box';
@@ -6,6 +8,17 @@ import user from '../user.json';
 
 export const App = () => {
   return (
-    <Profile profile={user}/>
+    <>
+      <Box>
+    <Profile
+      username={user.username}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats} />
+      </Box>
+      <GlobalStyle/>
+    </>
+    
   );
 };
