@@ -23,7 +23,7 @@ export const Profile = ({
             <Description>
                 <Icon src={avatar} alt='User avatar' />
                 <UserName>{username}</UserName>
-                <Tag>{tag}</Tag>
+                <Tag>@{tag}</Tag>
                 <Location>{location}</Location>
             </Description>
             <StatsList>
